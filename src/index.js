@@ -1,13 +1,5 @@
 import ReactDom from 'react-dom';
-
-const App = () => {
-  return (
-    <>
-      <h1>こんにちは！</h1>
-      <p>お元気ですか？</p>
-    </>
-  );
-};
+import { App } from './App';
 
 // render(render対象, render箇所) : ReactDomが持っているメソッド
 // id: root ⇨public > index.htmlのdiv#root
