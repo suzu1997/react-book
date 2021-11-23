@@ -1,5 +1,6 @@
 import ReactDom from 'react-dom';
 import { App } from './App';
+import './index.css';
 
 // render(render対象, render箇所) : ReactDomが持っているメソッド
 // id: root ⇨public > index.htmlのdiv#root
