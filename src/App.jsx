@@ -1,12 +1,9 @@
 import { useState } from 'react';
-import { ColoredMessage } from './components/ColoredMessage';
-import { CssModules } from './components/CssModules';
-import { StyledJsx } from './components/StyledJsx';
-import { StyledComponents } from './components/StyledComponents';
-import { Emotion } from './components/Emotion';
-import { TailwindCss } from './components/TailwindCss';
+import { Child1 } from './components/Child1';
+import { Child4 } from './components/Child4';
 
 export const App = () => {
+  console.log('Appレンダリング');
   const [num, setNum] = useState(0);
 
   const onClickButton = () => {
@@ -15,16 +12,10 @@ export const App = () => {
 
   return (
     <>
-      <h1 style={{ color: 'red' }}>こんにちは！</h1>
-      <ColoredMessage color='blue'>お元気ですか？</ColoredMessage>
-      <ColoredMessage color='pink'>元気です！</ColoredMessage>
       <button onClick={onClickButton}>ボタン</button>
       <p>{num}</p>
-      <CssModules />
-      <StyledJsx />
-      <StyledComponents />
-      <Emotion />
-      <TailwindCss />
+      <Child1 />
+      <Child4 />
     </>
   );
 };
