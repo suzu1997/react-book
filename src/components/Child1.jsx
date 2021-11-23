@@ -6,15 +6,18 @@ const style = {
   height: '200px',
   backgroundColor: 'lightblue',
   padding: '8px',
-} 
+};
 
-export const Child1 = memo(() => {
+export const Child1 = memo((props) => {
+  const { onClickReset } = props;
+
   console.log('Child1レンダリング');
   return (
     <div style={style}>
       <p>Child1</p>
+      <button onClick={onClickReset}>リセット</button>
       <Child2 />
       <Child3 />
     </div>
-  )
+  );
 });
